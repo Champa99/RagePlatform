@@ -1,0 +1,74 @@
+/*
+ * Auto created by artisan on 10.08.2019 at 17:00
+ * default/css/admin/_buttonManager
+ * @author Champa
+ */
+
+.admin-button-manager {
+
+    .button-list {
+
+        .button-preview {
+            border-bottom: 1px solid rgba(0, 0, 0, .1);
+            padding: 8px;
+
+            @include not_selectable();
+            @include transition(background .15s ease-in-out, box-shadow .15s ease-in-out, opacity .15s ease-in-out);
+
+            &:nth-last-of-type(1) {
+                border-bottom: 0; 
+            }
+
+            .button-icons {
+                float: right;
+
+                .icon {
+                    display: inline-block;
+                    cursor: pointer;
+                    margin: 0 3px;
+
+                    &.collapse-icon {
+                        color: rgba(0, 0, 0, .25);
+                    }
+
+                    &.delete-icon {
+                        color: rgba(255, 37, 37, 0.25);
+                    }
+
+                    &.move-icon {
+                        color: rgba(0, 0, 0, .25);
+                        cursor: -webkit-grab;
+                        cursor: grab;
+                    }
+                }
+            }
+
+            &.moving {
+                background: #fff;
+                position: fixed;
+                z-index: 2;
+                border-radius: 6px;
+
+                @include box-shadow(0px 10px 47px -10px rgba(0, 0, 0, 0.7));
+            }
+
+            &.not-moving {
+                opacity: .5;
+            }
+
+            .children-buttons {
+                padding-left: 20px;
+            }
+        }
+
+        .drop-indicator {
+            height: 41px;
+            background: rgba(95, 95, 255, 0.199);
+        }
+
+        .drop-indicator-make-child {
+            height: 41px;
+            background: rgba(250, 95, 255, 0.199);
+        }
+    }
+}

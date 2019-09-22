@@ -1,0 +1,79 @@
+/*
+ * Auto created by artisan on 02.08.2019 at 11:47
+ * default/css/components/_common
+ * @author Champa
+ */
+
+body {
+	background-color: #f1f0f1;
+}
+
+.spinner-grow-small {
+	height: 1.5em !important;
+	width: 1.5em !important;
+}
+
+.rage-input {
+	border: 1px solid rgba(0, 0, 0, .2);
+	border-radius: 6px;
+	background: rgba(0, 0, 0, .02);
+	padding: 4px 8px;
+
+	@include transition(color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out);
+
+	&:focus {
+		outline: 0;
+
+		@include box-shadow(0 0 0 0.2rem rgba(255, 38, 255, 0.5));
+	}
+}
+
+.rage-select {
+	border: 1px solid rgba(0, 0, 0, .2);
+	border-radius: 6px;
+	background: rgba(0, 0, 0, .02);
+	padding: 4px 8px;
+	background: #fff;
+
+	@include transition(color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out);
+
+	&:focus {
+		outline: 0;
+
+		@include box-shadow(0 0 0 0.2rem rgba(255, 38, 255, 0.5));
+	}
+}
+
+.rage-input-holder {
+
+	.input-col {
+		height: 35px;
+
+		&.label {
+			line-height: 35px;
+		}
+	}
+}
+
+.btn {
+
+	&.btn-rage {
+		color: #fff;
+
+		@include gradient(45deg, rgba(124,0,255,1) 0%, rgba(154,0,255,1) 50%, rgba(172,0,210,1) 100%);
+	
+		&:focus {
+
+			@include box-shadow(0 0 0 0.1rem rgb(255, 255, 255), 0 0 0 0.3rem rgba(155, 100, 252, 0.53));
+		}
+	}
+}
+
+.drop-here {
+	cursor: -webkit-grabbing !important;
+	cursor: grabbing !important;
+}
+
+.top-controls {
+	margin-bottom: 10px;
+}

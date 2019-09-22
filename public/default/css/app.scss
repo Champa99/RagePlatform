@@ -1,0 +1,16 @@
+/* ==========================================================
+
+	Main css file for the default theme
+
+========================================================== */
+
+@import "imports/mixins";
+@import "components/common";
+@import "components/adminLayout";
+
+@import "admin/common";
+@import "admin/settings";
+@import "admin/buttonManager";
+@import "admin/languages";
+
+@import "pages/login";

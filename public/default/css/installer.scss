@@ -1,0 +1,142 @@
+/* ===============================================
+
+    Style sheet for the RAGE installer
+
+=============================================== */
+
+@import "imports/mixins";
+
+body {
+    font-family: 'Roboto', sans-serif;
+
+    @include gradient(45deg,#7c00ff 0%,#9a00ff 50%,#ac00d2 100%);
+}
+
+.window {
+    background: #fff;
+    border-radius: .5vw;
+    padding: 3.5%;
+    position: fixed;
+    width: 85%;
+    height: 75%;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+
+    @include box-shadow(0px 20px 47px -10px rgba(0, 0, 0, 0.7));
+}
+
+h1 {
+    font-size: 37px;
+    letter-spacing: 1.2px;
+    margin: 0;
+
+    span {
+        font-weight: normal;
+    }
+}
+
+.btn {
+    border-radius: 10vw;
+    padding: .7rem 3rem;
+    text-transform: uppercase;
+    color: #fff;
+    text-decoration: none;
+    margin: 10px;
+    font-weight: bold;
+
+    @include gradient(45deg, #aa00ff 0%, #9a00ff 50%, #6600d2 100%);
+    @include transition(color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out);
+
+    &:focus {
+        @include box-shadow(0 0 0 0.2rem rgba(38,143,255,.5));
+    }
+}
+
+.margin-separator {
+    padding: 15px 0;
+}
+
+.menu {
+    display: inline-block;
+    vertical-align: top;
+    width: 200px;
+    background: rgba(0, 0, 0, .05);
+    border-radius: .5vw;
+    padding: 8px;
+    margin-top: 30px;
+
+    a.menu-item {
+        display: block;
+        text-decoration: none;
+        color: rgba(0, 0, 0, .9);
+        padding: 5px;
+        border-bottom: 1px solid rgba(0, 0, 0, .05);
+
+        i {
+            @include transition(.2s margin);
+        }
+
+        &:hover {
+            i {
+                margin-right: 5px;
+            }
+        }
+
+        &.passed {
+            color: rgb(0, 214, 0);
+            font-weight: bold;
+        }
+
+        &:nth-last-of-type(1) {
+            border-bottom: 0;
+        }
+    }
+}
+
+.content {
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 30px;
+    margin-left: 20px;
+
+    @include calcWidth(100%, 260px);
+}
+
+.error-list {
+    margin: 0;
+    padding: 0;
+    height: 28vw;
+    overflow-y: auto;
+
+    li {
+        list-style: none;
+        padding: 10px;
+        background: #ffb1b1;
+        border: 1px solid #ff9090;
+        border-radius: .5vw;
+        margin-bottom: 10px;
+
+        p {
+            margin: 0;
+
+            &.error-list-title {
+                font-size: 17px;
+                font-weight: bold;
+            }
+
+            &.error-list-tip {
+                color: rgba(0, 0, 0, .8);
+
+                span {
+                    background: rgba(0, 0, 0, .2);
+                    padding: 3px;
+                    color: rgba(255, 255, 255, .8);
+                    border-radius: .3vw;
+                }
+            }
+        }
+    }
+}

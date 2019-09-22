@@ -1,0 +1,41 @@
+/*
+ * Auto created by artisan on 10.09.2019 at 12:30
+ * default/css/admin/languages
+ * @author Champa
+ */
+
+.admin-languages {
+
+    
+}
+
+.language-installer {
+    height: 220px;
+
+    .or-divider {
+        position: relative;
+        margin-left: 50%;
+
+        .line {
+            position: absolute;
+            width: 1px;
+            height: 200px;
+            background: rgba(0, 0, 0, .3);
+        }
+
+        p.or {
+            position: absolute;
+            width: 25px;
+            height: 25px;
+            border-radius: 6px;
+            background: #fff;
+            border: 2px solid rgba(0, 0, 0, .3);
+            color: rgba(0, 0, 0, .9);
+            margin-left: -12px;
+            text-align: center;
+            line-height: 18px;
+            text-transform: lowercase;
+            margin-top: 87.5px;
+        }
+    }
+}
