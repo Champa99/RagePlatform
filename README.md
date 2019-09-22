@@ -1,4 +1,4 @@
-#RAGE Platform
+# RAGE Platform
 
 # Installation
 
