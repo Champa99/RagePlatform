@@ -2,7 +2,7 @@
 
 # Installation
 
-You will probably run an installer and go through a few steps (nothing scary)
+You will probably run an installer and go through a few steps (nothing scary)... The installer is currently not available as its yet to be made
 
 ## Requirements
 **Minimal server requirements** for running the platform:
